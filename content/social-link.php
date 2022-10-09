@@ -2,14 +2,14 @@
 $arSocialLink = [
     [
         'link' => 'vk.com',
-        'icon' => ''
+        'icon' => '/upload/social/vk.png'
     ],
     [
         'link' => 'telegram.com',
-        'icon' => ''
+        'icon' => '/upload/social/telegram.png'
     ],
     [
         'link' => 'github.com',
-        'icon' => ''
+        'icon' => '/upload/social/github.png'
     ],
 ];

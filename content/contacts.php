@@ -1,15 +1,15 @@
 <?php
 $arContacts = [
     [
-        'icon' => '',
+        'icon' => '/upload/social/email.png',
         'text' => 'mit.maria2019@yandex.ru'
     ],
     [
-        'icon' => '',
+        'icon' => '/upload/social/telegram.png',
         'text' => '@mitina_mv'
     ],
     [
-        'icon' => '',
+        'icon' => '/upload/social/vk.png',
         'text' => '@mitina_mv'
     ],
 ];
