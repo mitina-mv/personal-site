@@ -1,103 +1,351 @@
 <!DOCTYPE html>
-<html lang='ru'>
-
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <title>Добро пожаловать!</title>
-    <style>
-    a {
-        background-color: transparent;
-        -webkit-text-decoration-skip: objects
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/main/style.css">
+    <title>Личный сайт Митиной Марии</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/templates/main/assets/js/main.js"></script>
 
-    a:active,
-    a:hover {
-        outline-width: 0
-    }
-
-    *,
-    *:after,
-    *:before {
-        box-sizing: inherit;
-        margin: 0;
-        padding: 0;
-        color: #ECEDF0;
-    }
-
-    html {
-        box-sizing: border-box;
-        font-size: 1px !important;
-    }
-
-    body {
-        font: normal 14rem/21rem Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
-        background-color: #1E2F46;
-    }
-
-    .outer {
-        display: table;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-    }
-
-    .middle {
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    .inner {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 570rem;
-        min-width: 360rem;
-        padding: 20rem;
-    }
-
-    h1 {
-        line-height: 45rem;
-        font-size: 50rem;
-    }
-
-    h2 {
-        margin-top: 5rem;
-        line-height: 30rem;
-        font-size: 27rem;
-    }
-
-    h1,
-    h2 {
-        color: #ECEDF0;
-        text-shadow: #1C222F 2rem 2rem 0;
-    }
-
-    .button {
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        background-color: #993333;
-        color: #ECEDF0;
-        padding: 8rem 16rem;
-        border-radius: 5rem;
-        overflow: hidden;
-        font-size: 16rem;
-        margin: 20rem 0 15rem 0;
-    }
-    </style>
 </head>
-
 <body>
-    <div class='outer'>
-        <div class='middle'>
-            <div class='inner'>
-                <h1>Добро пожаловать!</h1>
-                <h2>Open Server Panel работает ;-)</h2><br><a href='https://ospanel.io/docs/' class='button'>Руководство пользователя</a>
+    <header>
+        <div class="header__logo">
+            <img src="/templates/main/assets/images/logo.png" alt="">
+        </div>
+
+        <div class="header__burger-menu menu">
+            <div class="menu__burger__container-btn">
+                <span class="menu__burger-btn">
+                </span>
+            </div>
+
+            <div class="menu__container">
+                <nav>
+                                            <a class='menu__item' href="/#main">
+                            Приветствие                        </a>
+                                            <a class='menu__item' href="/#about">
+                            Обо мне                        </a>
+                                            <a class='menu__item' href="/#projects">
+                            Проекты                        </a>
+                                            <a class='menu__item' href="/#contacts">
+                            Контакты                        </a>
+                                    </nav>
+            </div>
+        </div>
+    </header>
+<div class="hello-block container">
+    <img src="/templates/main/assets/images/main.png " class="hello-block__image">
+
+    <div class="hello-block__title">
+        <a name="main"></a>
+
+        <span class="hello-block__subtitle">Привет, я</span>
+        <h1 class="hello-block__main-title">Митина Мария</h1>
+        <span class="hello-block__subtitle">студентка группы ПИ-20-1 и веб-разработчик</span>
+    </div>
+
+    <div class="hello-block__social-link">
+        <div class='hello-block__social-title'> 
+            Найдите меня
+            <span class="arrow_image"></span>
+        </div>
+                    <a class='social-link__item' href="https://vk.com" target="_blank" rel="noopener noreferrer" style='background-image: url(/upload/social/vk.png)'>
+            </a>
+                    <a class='social-link__item' href="https://telegram.com" target="_blank" rel="noopener noreferrer" style='background-image: url(/upload/social/telegram.png)'>
+            </a>
+                    <a class='social-link__item' href="https://github.com" target="_blank" rel="noopener noreferrer" style='background-image: url(/upload/social/github.png)'>
+            </a>
+            </div>
+</div>
+
+<a name='about'></a>
+<h2 class='main-caption'>Мои навыки</h2>
+
+<div class="technologies container">
+    
+    <div class="technologies__tabs tabs-component">
+        <div class="tabs-component__container">
+            <div class="tabs-component__content tabs-component__content_default tabs-component__content_active">
+                <span class='tabs-component__content-title'>
+                    Люблю дизайн и код одинаково
+                </span>
+                
+                <p class='tabs-component__content-text'>
+                    Представьте, как это здорово, когда за дизайн и реализацию отвечает один человек: ситуации, когда в макете было лучше, чем на сайте, будут полностью исключены. Со мной это будет не фантазией, а приятной реальностью.
+                </p>                    
+            </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        HTML                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        Мой опыт верстки порядка 6 лет. HTML был моим первым шагом в IT. Сейчас я умею делать верстку валидной и семантически правильной, знаю HTML5 теги и верстаю по БЭМ. А для хорошего сайта это важно.                    </p>                    
+                </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        CSS                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        Вместе с HTML я учила и CSS, потому что сразу ставила своей целью делать хорошие сайты. Сегодня я знаю о css-переменных и функциях в языке, различные единицы измерения, адаптивной верстки и прочих таких важных, но незаметных на первый взгляд тонкостях, что Ваш сайт будет работать хорошо.                    </p>                    
+                </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        JS                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        Опыт работы с JS у меня порядка 5 лет. Я могу реализовать с применением этого языка браузерные игры, сложные системы тестирования, редактирование изображений... Кроме того, владею множеством фрейморков для JS, поэтому Ваша задача точно будет решена.                    </p>                    
+                </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        Vue.js                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        Опыт работы с Vue.js - 3 года. Уже сейчас я многое умею, а готова научиться делать еще больше! Вы можете увидеть мои проекты на vue: калькулятор, todo-list, приложение для тестов.                    </p>                    
+                </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        Bitrix                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        CSM Bitrix - это то, что сделает ваш сайт реальностью. И я имею опыт разработки на данной CSM порядка 5 лет: знакома с API (в т.ч. ядря D7, highload-блоками), реализовывала самый разнообразный функционал средствами данной cms, даже создала на нем конструктор сайтов.                    </p>                    
+                </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        PHP                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        Опыт работы с PHP у меня также порядка 5 лет, я начала его изучать параллельно с Bitrix, потому что почти все в Bitrix пишется на php. Сегодня я могу генерировать документы, создавать сложные алгоритмы, работать с БД. Решение для вашей задачи найдется!                    </p>                    
+                </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        C++                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        Этому меня научили в ЛГТУ! Да, я могу не только в веб, и если вам будет сильно надо, за большую денежку попробую стать самым исполнительным разрабом на c++. Пока что могу похвастать только массой лабораторных работ на c++ и званием "настоящего разработчика" от господина Ведищева Виталия Викторовича, который привел меня в мир ООП.                    </p>                    
+                </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        Figma                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        Да, я еще и дизайнер. Почти все мои проекты были реализованы мной от дизайна до разработки, подробнее об этом вы сможете прочитать далее в Копилке проектов. На Figma я работаю 4 года, и за это время "задизайнила" под заказ 25+ макетов! Сайт для себя я тоже сделала самостоятельно )                    </p>                    
+                </div>
+                            <div class="tabs-component__content">
+                    <span class='tabs-component__content-title'>
+                        Photoshop                    </span>
+
+                    <p class='tabs-component__content-text'>
+                        При разработке дизайна никуда без графического сопровождение, и в этом мне сильно помогает Photoshop. Конечно, я не работаю в нем на уровне графических дизайнеров или фотографов, но с большой вероятностью, мы с вами сможем найти уникальный образ для вашей идеи и моих навыков хватит на ее воплощение.                    </p>                    
+                </div>
+                        <div class="tabs-component__content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL1UWCIDGAMybCbmtUPoqtJJoL-fNnecMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="tabs-component__btn-group">
+            <div class="tabs-component__btn-group-before">
+                Посмотрите, что я могу предложить:
+            </div>
+
+            <div class="tabs-component__btn-block">                
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/html.png");'>                   
+                    </div>
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/css.png");'>                   
+                    </div>
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/js.png");'>                   
+                    </div>
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/vue.png");'>                   
+                    </div>
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/bitrix.png");'>                   
+                    </div>
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/php.png");'>                   
+                    </div>
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/c.png");'>                   
+                    </div>
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/figma.png");'>                   
+                    </div>
+                                    <div class="tabs-component__btn" style='background-image: url("/upload/tech/photoshop.png");'>                   
+                    </div>
+                                <div class="tabs-component__btn"> видео      
+                    </div>
+            </div>
+
+            <div class="tabs-component__btn-group-after">
+                Нажмите на иконку и узнайте больше о моем опыте работы с выбранной технологией
             </div>
         </div>
     </div>
-</body>
 
+    <div class="technologies__picture">
+        <img src="/templates/main/assets/images/about.png" alt="" srcset="">
+    </div>
+</div>
+
+<div class="projects">
+    <a name="projects"></a>
+
+    
+    <h2 class='main-caption'>Копилка проектов</h2>
+
+    <div class="projects-slider slider swiper">
+        <div class="swiper-wrapper">
+                            <div class="projects-slider__item slider__item swiper-slide">
+                    <div class="slider__picture" 
+                        style='background-image: url(/upload/projects/5.png);'>
+                    </div>
+
+                    <div class="slider__info">
+                        <span class='slider__title'>
+                            Бессмертный полк Елецкого района                        </span>
+
+                        <p class="slider__desc">
+                            В 2020 году Администрация Елецкого района выступила с инициативой создать книгу памяти солдат ВОВ Елецкого района. Для этого создали сайт с интерактивной книгой и общей информацией о движении “Бессмертный полк”.                         </p>
+
+                        <p class="slider__tech">
+                            HTML | CSS | JS | PHP | Bitrix | Figma | PS                        </p>
+
+                                                    <a href="https://polk.elradm.ru/" target="_blank" rel="noopener noreferrer" class='btn'>Смотреть результат</a>
+                                            </div>                   
+                </div>
+                            <div class="projects-slider__item slider__item swiper-slide">
+                    <div class="slider__picture" 
+                        style='background-image: url(/upload/projects/4.png);'>
+                    </div>
+
+                    <div class="slider__info">
+                        <span class='slider__title'>
+                            Администрация Елецкого района                        </span>
+
+                        <p class="slider__desc">
+                            В 2020 году была произведен редизайн сайта Администрации Елецкого муниципального района. Работа была интересной, а в результате удалось добавить на сайт новый функционал, в том числе версию для слабовидящих.                        </p>
+
+                        <p class="slider__tech">
+                            HTML | CSS | JS | PHP | Bitrix | Figma                        </p>
+
+                                                    <a href="https://elradm.ru/" target="_blank" rel="noopener noreferrer" class='btn'>Смотреть результат</a>
+                                            </div>                   
+                </div>
+                            <div class="projects-slider__item slider__item swiper-slide">
+                    <div class="slider__picture" 
+                        style='background-image: url(/upload/projects/2.png);'>
+                    </div>
+
+                    <div class="slider__info">
+                        <span class='slider__title'>
+                            Мебельный континент (Липецк)                        </span>
+
+                        <p class="slider__desc">
+                            Сайт Мебельного континента в Липецке существует с 2014 года, но в 2018 году я проведа редизайн и доработку сайта. Добавили интерактивную карту и форму подачи заявки для арендаторов, а также мобильную версию.                        </p>
+
+                        <p class="slider__tech">
+                            HTML | CSS | JS | PHP | Bitrix | Figma                        </p>
+
+                                                    <a href="https://kontinent-48.ru/" target="_blank" rel="noopener noreferrer" class='btn'>Смотреть результат</a>
+                                            </div>                   
+                </div>
+                            <div class="projects-slider__item slider__item swiper-slide">
+                    <div class="slider__picture" 
+                        style='background-image: url(/upload/projects/3.png);'>
+                    </div>
+
+                    <div class="slider__info">
+                        <span class='slider__title'>
+                            Мебельный континент (Тамбов)                        </span>
+
+                        <p class="slider__desc">
+                            Сайт Мебельного континента в Тамбове давно радует тамбовчан широким ассортиментом мебели и акссесуаров для дома, но в 2017 году я провеля редизайн сайта. Он был одним из первых моих проектов, для него мной были разработаны 3 макета, а потом по одному из макетов был создан текущий сайт.                        </p>
+
+                        <p class="slider__tech">
+                            HTML | CSS | JS | PHP | Bitrix | Figma                        </p>
+
+                                                    <a href="https://continent-68.ru/" target="_blank" rel="noopener noreferrer" class='btn'>Смотреть результат</a>
+                                            </div>                   
+                </div>
+                            <div class="projects-slider__item slider__item swiper-slide">
+                    <div class="slider__picture" 
+                        style='background-image: url(/upload/projects/1.png);'>
+                    </div>
+
+                    <div class="slider__info">
+                        <span class='slider__title'>
+                            Обруч.Лица                        </span>
+
+                        <p class="slider__desc">
+                            Этот сайт - часть проекта Обруч. Он призван помочь преподавателям и педагогам создать собственные персональные сайты. Предоставляет максимально простой интерфейc для раоты исключительно с данными и широкие настройки внешнего вида. </br> Сегодня на Обруч.Лица можно найти порядка 150 педагогов и это не предел. Все они дают положительные оценки системе, и это мотивирует развивать ее!                        </p>
+
+                        <p class="slider__tech">
+                            HTML | CSS | JS | PHP | Figma                        </p>
+
+                                            </div>                   
+                </div>
+                    </div>  
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script>
+        let swiper = new Swiper(".projects-slider", {
+            effect: "cards",
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</div>
+
+<a name="contacts"></a>
+<h2 class='main-caption'>Появилась идея?</h2>
+
+<div class="contacts container">
+    <form action="#" class="contacts__send-mail main-form" method='post'>
+        <span class='main-form__title'>
+            Напишите мне
+        </span>
+
+        <input type="text" name="send_name" id="" placeholder="Ваше имя">
+
+        <input type="text" name="send_email" id="" placeholder="Ваша почта">
+
+        <textarea name="send_mess" id="" cols="30" rows="3" placeholder="Опишите Ваш проект"></textarea>
+
+        <div class="send_spam-block spam-block">
+            <span class="spam-block__title">Защита от СПАМ'а</span>
+
+            <div class="spam-line">
+                <span class="spam-line__slider"></span>
+            </div>
+        </div>
+
+        <button type="submit" class='btn'>Отправить</button>
+    </form>
+
+    <div class="contacts-card">
+        <span class='main-form__title'>
+            Контакты
+        </span>
+                    <div class="contact__item">
+                <div class="contact__icon" style='background-image: url(/upload/social/email.png);'></div>
+                <span class="contact__text">mit.maria2019@yandex.ru</span>
+            </div>
+                    <div class="contact__item">
+                <div class="contact__icon" style='background-image: url(/upload/social/telegram.png);'></div>
+                <span class="contact__text">@mitina_mv</span>
+            </div>
+                    <div class="contact__item">
+                <div class="contact__icon" style='background-image: url(/upload/social/vk.png);'></div>
+                <span class="contact__text">@mitina_mv</span>
+            </div>
+            </div>
+</div>
+<footer>
+<span>Сайт-портфолио представлен в ознакомительных целях и не является публичной офертой</span>
+<span>2022г.</span>
+</footer>    
+</body>
 </html>
